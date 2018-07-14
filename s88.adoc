@@ -1,0 +1,14 @@
+[[zimbra88]]
+= Zimbra 8.8
+'''
+
+== Coming Soon
+
+
+== Release Notes
+
+[options="header",cols="20,20,20,30,20"]
+|===
+|Release |Codename |Patch Level	|Third-Party Patch |Release Notes
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8[8.6.08 GA Release] |JudasPriest |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.6_Patch_8[Patch 8] |No patches |https://files.zimbra.com/website/docs/8.8/ZCS_88_NE_ReleaseNotes.pdf[Release Notes]
+|===

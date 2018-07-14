@@ -1,0 +1,36 @@
+:document-title: Zimbra Feature Summary
+:toclevels: 2
+:leveloffset: +1
+:icons: font
+:title-logo-image: images/zimbra_logo.jpg
+:showlinks:
+:source-highlighter: coderay
+:toc: left
+:experimental:
+
+= {document-title}
+Feature Release from 8.0 to 8.7
+
+<<<
+
+include::s80.adoc[]
+
+<<<
+
+include::s85.adoc[]
+
+<<<
+
+include::s86.adoc[]
+
+<<<
+
+include::s87.adoc[]
+
+<<<
+
+include::s88.adoc[]
+
+<<<
+
+:leveloffset: -1

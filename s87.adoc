@@ -1,0 +1,137 @@
+[[zimbra87]]
+= Zimbra 8.7
+'''
+
+== What's New 8.7
+
+* New package repository
+* Two-Factor Authentication (Only available with a Network Edition license)
+* Postscreen support
+* SSL SNI support
+* 2000+ bug fixes
+* Many issues fixed across all services for better security and performance
+
+=== Zimbra Package Repository
+Zimbra 8.7 now uses a package repository for the majority of 3rd party libraries
+
+* Smaller installer size
+* Zimbra can push rapid updates to 3rd party packages without having to release a patch, ideal for security updates
+* Customers can update 3rd party packages to latest version without having to apply patch
+* Will be expanding this concept to the rest of the product over time
+
+=== Other Important 8.7.x Features
+* [8.7.0] Many issues fixed across all services for better security and performance
+* [8.7.1] Upgrade fixed from 8.7.0 or earlier
+* [8.7.2] EWS and GalSync fixes
+* [8.7.4] XXE [CWE-611] - Fix for XML External Entity (XXE) attack
+* [8.7.5] New S/MIME Zimlet in Technical Preview, which works without Java browser applet in modern web browsers
+* [8.7.5] Documentation moved to GitHub in AsciiDoc format
+* [8.7.6] Zimbra Chat and Zimbra Drive
+* [8.7.7] More ZCO and EWS fixes
+* [8.7.8] Sieve extension support Added
+* [8.7.9]
+* [8.7.10]
+* [8.7.11]
+
+=== [8.7.6] - Feature Summary
+* Zimbra Chat *early release* - Starting Zimbra Collaboration 8.7.6, Zimbra includes a free and GPLv2 Chat product embedded inside the product, please https://bugzilla.zimbra.com/show_bug.cgi?id=107797[click here] for more information
+* Zimbra Drive *early release* - Starting Zimbra Collaboration 8.7.6, Zimbra includes a free and GPLv2 OwnCloud/NextCloud product embedded inside Zimbra, please https://bugzilla.zimbra.com/show_bug.cgi?id=107798[click here] for more information
+* Ephemeral Backend - this release includes a *beta release* of a major change in Zimbra architecture that allows enabling protection against CSRF and cookie-reuse attacks without increasing load on LDAP
+
+=== [8.7.9] - Zimbra Drive Fixes
+.Feature Improvements
+* Added full working Search feature
+* Smart case insensitive query parsing
+* Preview and most operations available
+* Added NewFolder button in Move Dialog
+* Added Zimbra Drive icon and browser tab title
+* Added some checks to prevent illegal actions
+
+.Bug Fixes
+* Fixed several zimbra drive folders management
+* Fixed a rename folder bug
+* Disable wrong operations on root folder
+* Revisited all listeners functions
+
+== Security Fixes for 8.7.x
+IMPORTANT: Security Settings for Zimbra Collaboration 8.7 series - https://wiki.zimbra.com/wiki/Security/Collab/87
+
+* *8.7.0*
+
+[options="header",cols="15,12,25,^15", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug ID	|Rating	|CVE Number	   |CVSS Score
+|98215	|Minor	|CVE-2015-2249 |4.3
+|98216	|Minor	|CVE-2015-2249 |4.3
+|98358	|Minor	|CVE-2015-2249 |4.3
+|99167	|Minor	|CVE-2016-3402 |2.6
+|99810	|Minor	|CVE-2016-3401 |3.5
+|99854	|Minor	|CVE-2015-2249 |3.5
+|100133	|Minor	|CVE-2015-2249 |3.5
+|100899	|Major  |CVE-2016-3403 |6.8
+|101435	|Major	|CVE-2015-7609 |6.4
+|101436	|Minor	|CVE-2015-7609 |2.6
+|101559	|Minor	|CVE-2015-2249 |3.5
+|101813	|Minor	|CVE-2016-3408 |4.3
+|102029	|Minor	|CVE-2016-3414 |4
+|102227	|Major	|N/A	         |7.5
+|102276	|Major	|CVE-2016-3415 |5.8
+|102637	|Minor	|CVE-2016-3409 |4.3
+|103609	|Minor	|CVE-2016-3411 |3.5
+|103956	|Minor	|CVE-2016-3410 |4.3
+|103959	|Minor	|CVE-2016-3404 |4.3
+|103961	|Minor	|CVE-2016-3405 |4.3
+|103995	|Minor	|CVE-2016-3410 |4.3
+|103996	|Minor	|CVE-2016-3413 |2.6
+|103997	|Minor	|CVE-2016-3412 |3.5
+|104222	|Minor	|CVE-2016-3407 |4.3
+|104294	|Minor	|CVE-2016-3406 |2.6
+|104413	|Minor	|CVE-2016-3412 |3.5
+|104414	|Minor	|CVE-2016-3412 |3.5
+|104456	|Minor	|CVE-2016-3406 |2.6
+|104475	|Minor	|CVE-2016-3410 |4.3
+|104477	|Minor	|CVE-2016-4019 |4.3
+|104552	|Minor	|CVE-2016-3999 |4.3
+|104703	|Minor	|CVE-2016-3999 |4.3
+|104777	|Minor	|CVE-2016-3412 |3.5
+|104791	|Minor	|CVE-2016-3412 |3.5
+|104828	|Minor	|CVE-2016-3405 |4.3
+|104838	|Minor	|CVE-2016-3410 |4.3
+|104839	|Minor	|CVE-2016-3410 |4.3
+|104910	|Minor	|CVE-2016-3407 |3.5
+|105001	|Minor	|CVE-2016-5721 |4.3
+|105071	|Minor	|CVE-2016-3407 |4.3
+|105174	|Minor	|CVE-2016-5721 |2.1
+|105175	|Minor	|CVE-2016-3407 |2.1
+|===
+
+* 8.7.1
+
+[options="header",cols="15,12,25,^15", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug ID	|Rating	|CVE Number	   |CVSS Score
+|106612	|Minor  |CVE-2017-7288 |4.3
+|===
+
+* 8.7.6
+** Bug 107712 -	Improper limitation of file paths [CWE-22]
+** Bug 107684	- Improper handling of privileges [CWE-280]
+
+== Release Notes
+
+[options="header",cols="20,20,20,30,20"]
+|===
+|Release |Codename |Patch Level	|Third-Party Patch	|Release Notes
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.11[8.7.11 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.11[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.10[8.7.10 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.10[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.9[8.7.9 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.9[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.8[8.7.8 Developer Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.8[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.7[8.7.7 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.7[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.6[8.7.6 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.6[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.5[8.7.5 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.5[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.4[8.7.4 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.4[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.3[8.7.3 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.3[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.2[8.7.2 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.2[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.1[8.7.1 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.1[Release Notes]
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.0[8.7.0 GA Release] |JudasPriest |No patches |No patches |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.7.0[Release Notes]
+|===

@@ -1,0 +1,61 @@
+[[zimbra85]]
+= Zimbra 8.5
+'''
+
+== What's New 8.5
+=== Zimbra Touch Client
+* Provides support for touch-capable mobile devices.
+* Features are a subset of the features found in the Zimbra Web Client, including Mail, Contacts, and Calendar.
+
+=== Zimbra Web Client Offline Mode
+* Zimbra Web Client supports offline capability using browser HTML5 API, which allows you to continue using the web client and accessing your data without connectivity to the server.
+* When offline, one day to one month cached data is available from the browser.
+* Transitioning from online mode (normal mode) to offline mode, and vice versa, is automatic, seamless and CPU conservative.
+* A subset of application features are supported and enabled offline.
+* Machine registration and other security is supported.
+* Supported browsers include Google Chrome and Mozilla Firefox.
+
+=== High-Fidelity Document Preview
+* The document preview feature has been enhanced with a High-Fidelity preview, using LibreOffice.
+
+=== Exchange Web Services (EWS)
+* Native EWS support
+* Supports Outlook for Mac and Apple Mail
+* No plug-in required
+* Free/Busy interoperability with Exchange Server
+* Available for an additional charge. Contact Zimbra Sales for more information.
+
+=== ZCO Improvements
+* Log file improvements
+* Connection security improvements
+* Share message support, with Accept Share and Decline Share options available
+* Sync improvements
+* Chinese Traditional (zh_TW) added to localization
+
+=== MariaDB
+* MariaDB is a drop-in replacement for MySQL
+* MariaDB 10.0 is used with XtraDB storage engine
+* No data reload required, as uses same database set
+
+=== ActiveSync Performance
+* Improved ActiveSync performance and scalability
+
+=== Map Postfix Keys to LDAP
+For information about mapping postfix configuration keys to LDAP and localconfig by version, see the Zimbra wiki page https://wiki.zimbra.com/wiki/Postconf_keys.
+
+== Security Fixes for 8.5.x
+* Upgraded to OpenSSL 1.0.1j. See https://www.openssl.org/news/secadv_20141015.txt and Security Fixes for more information.
+* ZCS open source license update for 8.5.1 GA
+* Security fixes
+** CVE ID: CVE-2014-8563 (Versions affected: 8.0.0-8.0.8, 8.5.0) +
++
+IMPORTANT: This issue is an important vulnerability only to those Zimbra installations that have not deployed the ZCS nginx proxy in front of mailboxd for POP/IMAP. nginx is not vulnerable to this issue - only jetty (mailboxd) received this fix.
+
+== Release Notes
+
+[options="header",cols="20,20,20,30,20"]
+|===
+|Release |Codename |Patch Level	|Third-Party Patch |Release Notes
+|8.5.1 GA Release |JudasPriest |No patches |No patches |https://files.zimbra.com/website/docs/8.5/ZCS_851R2_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|8.5.0 GA Release	|JudasPriest |Patch 2	|No patches |https://files.zimbra.com/website/docs/8.5/ZCS_850_Rev2_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|===

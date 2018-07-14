@@ -1,0 +1,141 @@
+[[zimbra80]]
+= Zimbra 8.0
+'''
+
+== What's New 8.0
+=== Serenity User Experience
+* *Streamlined User Interface*. The user interface has been completely redesigned with simplicity and accessibility being the key improvements.The Zimbra 8 interface is more streamlined so that common actions are easily discoverable and highly intuitive to use.
+* *Conversation View*. In Zimbra 8 email is presented to users in a “natural” conversation view that makes reading and replying to messages convenient and intuitive. Quoted text is hidden and messages are laid out in a way that is easy for users to understand the “in-reply-to” relationship between different messages in the same email thread. Discreet links to Reply, Forward and More Actions (presented just below the email) let users respond to messages quickly and efficiently.
+* *Rich Composition*. Improved composition editor allows users to craft rich text emails, with features such as paste-style support from desktop applications and the ability to include inline images bring the power of desktop word processors to email.
+* *Shared Tagging*. In Zimbra 8 tagging functionality has been improved so that when items are shared users cannot only use tags to organize their data but also share these tags across applications as well as mailboxes.
+
+=== Activity Stream
+Activity Stream allows users extensive control over the messages that go to their Inbox. Users can easily set up activity stream filters that direct incoming messages to various folders (or are deleted from) based on different criteria that they can specify. For example, emails to distribution lists, feed and notifications that are not directly addressed to the user can be archived in folders that can be read when convenient.
+
+“Graymail” filtering prevents user’s Inbox from being cluttered by legitimate but unwanted emails.
+
+=== Dedicated Search Tab
+A dedicated search tab is created whenever a user enters a new query in the header search box. This allows users to perform a search, navigate away from the search tab to perform another action such as compose an email, or schedule an event and then come back to the search tab to continue with the query.
+
+Zimbra 8 provides users with a simple yet powerful search interface allowing users to perform simple actions such as quickly filter on common attributes or perform complex search queries making use of complex logical operators.
+
+=== Enterprise Calendaring
+Zimbra 8 provides an intuitive and sophisticated enterprise calendaring system that enables users to manage multiple calendars and provides support for advanced scheduling activities.
+
+* *Experience improvements to time and resource suggestions*. Zimbra 8 has significantly improved the user’s experience when working with the appointment scheduling feature. Once users select attendees, Zimbra 8 can compare calendar availability and provide users with a list of suggested meeting times. Similarly, based on meeting requirements such as the size
+of the room and location, Zimbra’s scheduler can provide users with a list of
+conference facilities that fit meeting requirements.
+* *Merge and split views of “Day” view* gives users the flexibility to view their different calendars (e.g. personal and work-related) either individually or overlaid on top of each other. (In other words, see a “merged” view of appointments from several different calendars in one calendar.)
+* *Landscape and date range printing* provides users greater control over how calendars are printed.
+* *Wizard to add external calendars* when users right-click to create new calendars. Zimbra 8 supports importing several popular calendar formats including Google and Yahoo! Calendars.
+
+=== Active Sync 12.1
+Zimbra offers server side implementation of Microsoft’s Active Sync 12.1 protocol providing end users access to their Zimbra mail on any mobile device that supports Active Sync 12.1.
+
+* Auto-discover support enables seamless linkage between the user’s account on the Zimbra server and the email client on the mobile device when valid credentials (email and password) are supplied from the device.
+* Device wipe In the event that the security of the mobile device is compromised administrators can perform a remote device wipe from the admin console, thus safeguarding against any loss of sensitive corporate data.
+* Bandwidth Reduction Since most mobile devices are often on high latency, low bandwidth (reduced connectivity) networks, Zimbra’s Active Sync implementation has been designed to operate at a reduced bandwidth.
+* Battery Optimization Active Sync protocol implementation has been optimized to conserve battery life for push enabled devices.
+* Persona/Alias support ActiveSync implementation provides push synchronization of email, contacts, calendars, tasks as well as the Persona/ Alias profile configurations associated with the user’s email address.
+* Advanced Administration Policies The introduction of 30 new configuration policies provides administrators more fine-grained control over user accounts and approved applications – allowing them to enable/disable device software and hardware capabilities as necessary.
+
+=== Unified Communication (UC)
+With unified communication multiple modes of business communications are seamlessly integrated, allowing users to receive a communication from one service, such as Voice Mail and respond using another service, such as ClickTo-Call.
+
+Zimbra 8 is designed so that real-time communication services such as voice, telephony and presence inter-operate with non-real-time services such as email and voicemail – allowing users to benefit from faster response times and companies to benefit from higher group productivity.
+
+==== Voice Service
+The new Voice Service feature provides out of the box integration with leading UC providers such as Cisco and Mitel.
+* Click-to-Call offers immediate voice connectivity with call-routing to device or soft-phone. This lets users take office calls at their office numbers on their mobile devices. Zimbra 8 supports the configuration of multiple numbers.
+* Presence provides real-time notification of user’s current availability and ability to communicate.
+* Visual Voicemail lets users view caller and voicemail information and supports inline playback and management features. It also supports MWI (Message Waiting Indicator) status updates, allowing users to customize the way they want to be notified about new voicemail messages. These voice messages can be saved in either .wav or .mp3 format.
+* Call record history includes information about voice mails received, placed calls, received calls, missed calls as well as details about date, time, and call duration.
+* Extensible SDK Zimbra’s flexible and extensible SDK allows for smooth and rapid integration with third-party APIs released by leading real-time UC solution providers
+
+==== Voice Service Licensing
+The Voice Service feature is a licensed feature. If you have an existing Professional Edition license, you will need to request a new license key from VMware Zimbra Support or Sales to enable this feature.
+
+=== IT as a Service
+==== Rolling upgrades
+* Minimal service disruption to perform upgrades
+* Multi-master directory replication
+* Mailbox moves forward between versions of Zimbra with less than 60 seconds of downtime for a single mailbox
+
+=== Self service collaboration
+* End user distribution list (DL) management from the web client. A delegated DL manager can create and manage subscriptions to distribution lists based on IT defined policies
+* End users can search and recover deleted items across mail, calendar, contacts, and tasks based on IT defined recovery retention policies
+
+=== Automatic Provisioning
+* Accounts in Zimbra can be provisioned with attributes populated from Active Directory or another LDAP directory. Accounts can be provisioned ad hoc automatically polling for new accounts
+* Dynamic distribution list support to automatically populate DL membership accounts based on account attributes
+
+=== Compliance
+* Litigation hold without forking the mailbox or needing to deploy additional infrastructure
+* Custom folder retention and disposal policies can be enabled by IT or end user
+* Administrative roles linked to Active Directory groups to enhance federated identity access and authorizations
+
+=== Migration
+* Multi-threaded for parallel mailbox migrations and improved scalability
+* Stage and schedule migrations with improved visibility into real-time statistics and error-logging
+* Migrate out of office settings to reduce migration scheduling conflicts
+
+=== Redesigned Administration Console
+The ZCS administration console was redesigned to make administration of ZCS easier. It starts with a Home page that has links to common tasks. The Navigation pane now separates functions into the following sections:
+
+* Home. The Home page has links to many of the common tasks. Also the Help Desk link is on this page.
+* Monitor. Server Status to view the status for all installed servers and services and server statistics, message count and volume, anti-spam and anti-virus activity, mobile sync statistics, mail queues pages can be accessed
+* Manage. Accounts, aliases, distribution lists, and resources pages can be accessed.
+* Configure. Class of Service (COS), domain, servers, Zimlets, admin console extensions, certificates, global settings, and voice/chat services pages can be accessed.
+* Tools and Migration. Zimbra Utilities downloads page for the migration tools and Zimbra Connector for Outlook msi files, software updates, backup, and cross mailbox search pages can be accessed.
+* Searches. You can create and save searches that you run frequently. A new Search page lets you create complex search queries.
+
+=== Other Important 8.0.x Features
+//* [8.0.1] Upgrade issues fixed
+* [8.0.2] Migration tools fixed
+* [8.0.2] ZCO for Windows 8
+* [8.0.3] Support pasting images in compose
+* [8.0.3] External StoreManager issues wth backup, restore, mailbox move fixed
+* [8.0.4] Support for CentOS 6, 64-bit and KVM
+* [8.0.5] Improved search performance
+* [8.0.5] Support for Windows8 and OLK 2013 Zimbra Mobile Sync
+* [8.0.5] Zimbra Touch client
+* [8.0.5] PST migration fixed for Exchange 2013
+* [8.0.6] ZCO issues with Kaspersky
+* [8.0.6] Support Safari on Mac OS Lion 10.7.5
+* [8.0.7] Zimbra Touch client fixes
+* [8.0.8] Support for RHEL7 64-bit and Ubuntu 14 LTS
+
+NOTE: *IPv6* and *Touch Client* support is beta for 8.0
+
+== Security Fixes for 8.0.x
+* *[8.0.9]* Upgraded to OpenSSL 1.0.1j. See https://www.openssl.org/news/secadv_20141015.txt and Security Fixes for more information.
+* *[8.0.9]* Security fixes
+** CVE-2014-8563 (Versions affected: 8.0.0-8.0.8, 8.5.0) +
++
+IMPORTANT: This issue is an important vulnerability only to those Zimbra installations that have not deployed the ZCS nginx proxy in front of mailboxd for POP/IMAP. nginx is not vulnerable to this issue - only jetty (mailboxd) received this fix.
+
+* *[8.0.6]* Security fixes
+** Directory traversal, read any file from filesystem in public SOAP service - CWE-611: (7.2.5 and 8.0.5 and all previous releases)
+* Poodle SSLv3 Vulnerability
+** CVE ID: CVE-2014-3566
+** Versions affected: All supported versions prior to 8.6.
+
+<<<
+
+== Release Notes
+
+[options="header",cols="20,20,20,30,20"]
+|===
+|Release |Codename |Patch Level	|Third-Party Patch |Release Notes
+|8.0.9 GA Release	|IronMaiden |No patches |No patches	|https://files.zimbra.com/website/docs/8.0/ZCS_809R1_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|8.0.8 GA Release	|IronMaiden |No patches |No patches	|https://files.zimbra.com/website/docs/8.0/ZCS_808R1_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|8.0.7 GA Release	|IronMaiden |Patch 2 |8.0.7 Curl Patch https://files.zimbra.com/downloads/security/zmcurl807-updater.sh[Download] +
+OpenSSL Heartbleed - https://files.zimbra.com/downloads/security/zmopenssl-updater.sh[Download]	|https://files.zimbra.com/website/docs/8.0/ZCS_807_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|8.0.6 GA Release	|IronMaiden |No patches .4+.^a|OpenSSL Heartbleed -  https://files.zimbra.com/downloads/security/zmopenssl-updater.sh[Download]	|https://files.zimbra.com/website/docs/8.0/ZCS_806R1_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|8.0.5 GA Release	|IronMaiden |Patch 1	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.5.pdf[Release Notes]
+|8.0.4 GA Release	|IronMaiden |Patch 2	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.4.pdf[Release Notes]
+|8.0.3 GA Release	|IronMaiden |Patch 3	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.3.pdf[Release Notes]
+|8.0.2 GA Release	|IronMaiden |Patch 1 |No patches	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.2.pdf[Release Notes]
+|8.0.1 GA Release	|IronMaiden |No patches |No patches	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.1.pdf[Release Notes]
+|8.0.0 GA Release	|IronMaiden |No patches |No patches	|https://files.zimbra.com/website/docs/8.0/Zimbra_NE_Release_Notes_8.0.0.pdf[Release Notes]
+|===

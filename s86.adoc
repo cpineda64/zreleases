@@ -1,0 +1,69 @@
+[[zimbra86]]
+= Zimbra 8.6
+'''
+
+== What's New 8.6
+
+* Translation & Accessibility
+** Zimbra is going to be compliant with the 508 section
+** Only the mail function is currently supported (Support for AJAX accessibility)
+* ZCO fixes
+* Support for IOS 8 & Microsoft Edge
+* Migration & EWS Improvement
+* [Security] Deprecated use of SSLv3 in the product as a whole.
+* [Security] Upgrade OpenSSL to 1.0.1j
+* [Security] Introduction of CSRF token to avoid CSRF attack
+* Ability to Create Dynamic Distribution List.
+* Account Delegation - End-user can now delegate the right to send an email in his name to a colleague
+* Many issues fixed across all services for better security and performance
+
+== Security Fixes for 8.6
+* *[Patch 2]*
+
+[options="header",cols="2,^1,^2,2", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug |Rating |CVSS Base Score |CVE-Number
+|Bug 98358 |Minor |4.3 |CVE-2015-2249
+|Bug 98216 |Minor |4.3 |CVE-2015-2249
+|Bug 98215 |Minor |4.3 |CVE-2015-2249
+|Bug 97625 |Minor |3.5 |CVE-2015-2230
+|===
+* *[Patch 5]*
+
+[options="header",cols="2,^1,^2,2", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug |Rating |CVSS Base Score |CVE-Number
+|Bug 101559 |Minor |3.5 |CVE-2015-2249
+|Bug 101436 |Minor |2.6 |CVE-2015-7609
+|Bug 101435 |Major |6.4 |CVE-2015-7609
+|Bug 100133 |Minor |3.5 |CVE-2015-2249
+|Bug 99914 |Minor |3.5 |CVE-2015-2249
+|Bug 99854 |Minor |3.5 |CVE-2015-2249
+|Bug 99236 |Minor |4.3 |CVE-2012-5881, CVE-2012-5882, CVE-2012-5883
+|Bug 96973 |Minor |4.3 |CVE-2015-2249
+|===
+* *[Patch 7]*
+
+[options="header",cols="2,^1,^2,2", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug |Rating |CVSS Base Score |CVE-Number
+|Bug 102029 |Minor |4.0 |CVE- 2016-3414
+|===
+* *[Patch 8]*
+
+[options="header",cols="2,^1,^2,2", frameset="topbot", grid="rows", width="60%"]
+|===
+|Bug |Rating |CVSS Base Score |CVE-Number
+|Bug 104294, 104456 |Minor |2.6 |CVE-2016-3406
+|Bug 103961,104828 |Minor |4.3 |CVE-2016-3405
+|Bug 103959	|Minor |4.3 |CVE-2016-3404
+|Bug 100885, 100899 |Major |5.8 |CVE-2015-6542, CVE-2016-3403
+|===
+
+== Release Notes
+
+[options="header",cols="20,20,20,30,20"]
+|===
+|Release |Codename |Patch Level	|Third-Party Patch |Release Notes
+|https://wiki.zimbra.com/wiki/Zimbra_Releases/8.6.0[8.6.0 GA Release] |JudasPriest |https://wiki.zimbra.com/wiki/Zimbra_Releases/8.6_Patch_8[Patch 8] |No patches |https://files.zimbra.com/website/docs/8.6/ZCS_860_NE_ReleaseNotes_UpgradeInst.pdf[Release Notes]
+|===
